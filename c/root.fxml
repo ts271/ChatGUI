@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatC">
+   <children>
+      <HBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="500.0">
+         <children>
+            <Label prefHeight="39.0" prefWidth="72.0" text="メッセージ:" />
+            <TextField fx:id="mesbox" prefHeight="39.0" prefWidth="364.0" promptText="ここにメッセージを入力してください" />
+            <Button mnemonicParsing="false" onAction="#sousin" prefHeight="39.0" prefWidth="92.0" text="送信" />
+         </children>
+      </HBox>
+      <Label prefHeight="37.0" prefWidth="94.0" text="受信メッセージ:" />
+      <TextArea fx:id="message" editable="false" prefHeight="376.0" prefWidth="500.0" text=" " />
+   </children>
+</VBox>
